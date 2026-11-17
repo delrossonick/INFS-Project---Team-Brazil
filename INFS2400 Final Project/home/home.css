@@ -5,3 +5,30 @@ body {
     color: #26352e;
     line-height: 1.7;
 }
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0.7rem 0.55rem;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: white;
+}
+
+.hamburger { display: none; }          /* hidden on desktop */
+
+@media (max-width: 800px) {
+  .hamburger { display: flex; }        /* shown on phones */
+  .nav-links { display: none; }
+  .nav-links.open { display: flex; }
+}
