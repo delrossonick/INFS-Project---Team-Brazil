@@ -1,40 +1,51 @@
 <!DOCTYPE html>
 <html>
+<meta charset="UTF-8">
     <head>
-<nav class="navbar">
-    <button class="hamburger" aria-label="Open Menu" aria-expanded="flase">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-    </button>
 
-    <ul class="nav-links">
-        <li><a href="#Home">Home</a></li>
-        <li><a href="#Learn-More">Learn More</a></li>
-        <li><a href="#About-us">About us</a></li>
-        <li><a href="#Resources">Resources</a></li>
-        <li><a href="#Solutions">Solutions</a></li>
-        <li><a href="#Edustats">Edustats</a></li>
-    </ul>   
+<div class="bg-success text-white pt-5 px-3" id="home">
+  <div class="container">
+    <h1 class="display-3 fw-bold">Brazil's Education Inequality</h1>
+    <p class="lead mb-5">Who gets to finish school in Brazil, who doesn't, and what it would take to change that.</p>
+    <div class="d-flex align-items-end gap-2" style="height: 5.5rem;">
+      <span class="flex-fill bg-warning" style="height: 100%"></span>
+      <span class="flex-fill bg-warning" style="height: 82%"></span>
+      <span class="flex-fill bg-warning" style="height: 64%"></span>
+      <span class="flex-fill bg-warning" style="height: 46%"></span>
+      <span class="flex-fill bg-warning" style="height: 30%"></span>
+      <span class="flex-fill bg-warning" style="height: 16%"></span>
+    </div>
+  </div>
+</div>
+
+    
+<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#home">Brazil EduGap</a>
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#menu"
+            aria-controls="menu" aria-expanded="false" aria-label="Toggle menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#learn-more">Learn More</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about-us">About us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#resources">Resources</a></li>
+        <li class="nav-item"><a class="nav-link" href="#solutions">Solutions</a></li>
+        <li class="nav-item"><a class="nav-link" href="#edustats">Edustats</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 </nav> <!--Hamburger Button-->
 
-<script>
-  const btn = document.querySelector('.hamburger');
-  const links = document.querySelector('.nav-links');
 
-  btn.addEventListener('click', () => {
-    links.classList.toggle('open');
-  });
-</script>
 
     </head>
 
     <body>
-<h1>Brazil's Education Inequality</h1>
-
-<p style="font-size: large;"> </p>Many schools in Brazil suffer from a lack of quality education. With many choosing not to finish even a high school level of education. Which is why today we will talk about the exact problems of Brazil's education system, statistics backing the claim and why that might have an impact on you, and solutions to help with the issues.</p>
-        
     </body>
 
 </html>
