@@ -1,9 +1,175 @@
 /* CSS for Solutions */
 
+{
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: "Open Sans";
-    margin: 20px;
-	text-align: center;
-	line-height: 140px;
-	background-color: #8ABFA1;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #edf3ed;
+    color: #26352e;
+    line-height: 1.7;
+}
+
+/* NAVIGATION */
+.navbar {
+    background-color: #244d3b;
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 1.4rem;
+    letter-spacing: 0.5px;
+}
+
+.nav-link {
+    color: white !important;
+    margin-left: 15px;
+}
+
+.nav-link:hover {
+    color: #c6e3ce !important;
+}
+
+/* HERO SECTION */
+.hero {
+    background: linear-gradient(
+        135deg,
+        #477d60,
+        #8fbea0
+    );
+    color: white;
+    padding: 90px 20px;
+}
+
+.hero h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-text {
+    max-width: 750px;
+    margin: 0 auto;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+.hero .btn {
+    color: #244d3b;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 12px 28px;
+}
+
+/* SECTION HEADINGS */
+.section-heading h2,
+.video-section h2 {
+    color: #244d3b;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.section-heading p {
+    color: #61736a;
+}
+
+/* CONTENT CARDS */
+.info-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    border-top: 5px solid #6c9d7b;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+}
+
+.info-card h3 {
+    color: #35634a;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.info-card p {
+    margin-bottom: 0;
+    color: #4c5951;
+}
+
+/* VIDEO */
+.video-section {
+    padding: 40px 15px;
+}
+
+.video-container {
+    max-width: 800px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* FOOTER */
+.footer {
+    background-color: #244d3b;
+    color: white;
+    margin-top: 30px;
+}
+
+/* TABLETS */
+@media (max-width: 768px) {
+    .hero {
+        padding: 65px 20px;
+    }
+
+    .info-card {
+        padding: 24px;
+    }
+
+    .navbar-nav {
+        padding-top: 10px;
+    }
+
+    .nav-link {
+        margin-left: 0;
+    }
+}
+
+/* PHONES */
+@media (max-width: 576px) {
+    .hero {
+        padding: 50px 18px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .section-heading h2,
+    .video-section h2 {
+        font-size: 1.6rem;
+    }
+
+    .info-card {
+        padding: 20px;
+    }
+
+    .info-card h3 {
+        font-size: 1.2rem;
+    }
+
+    main.container {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
 }
