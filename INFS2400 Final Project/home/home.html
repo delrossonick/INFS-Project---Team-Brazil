@@ -22,37 +22,50 @@
  </head>
 
 <body>
-
-
-   <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#home">Home</a> <!--Home Button-->
+      <a class="navbar-brand" href="#home">Home</a>
 
-     <!-- The hamburger button (a real <button>, opened and closed with a matching tag) -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavMenu" aria-controls="myNavMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <!-- The hamburger button (a real <button>, opened and closed with a matching tag) -->
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#myNavMenu"
+              aria-controls="myNavMenu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      
+
+      <!-- The collapsible part holds the links -->
+      <div class="collapse navbar-collapse" id="myNavMenu">
+
+        <!-- ONE list, with one <li> per link -->
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Solutions</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Learn more</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Resources</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+        </ul>
+
+      </div>
     </div>
+  </nav>
 
-    <div class="collapse narbar-colapse" id="myNavMenu">
+  <div class="bg-success text-white pt-5 px-3" id="home">
+    <div class="container">
+      <h1 class="display-3 fw-bold">Brazil’s Education Inequality</h1>
+      <p class="lead mb-5">Who gets to finish school in Brazil, who doesn’t, and what it would take to change that.</p>
+      <div class="d-flex align-items-end gap-2" style="height: 5.5rem;">
+        <span class="flex-fill bg-warning" style="height: 100%"></span>
+        <span class="flex-fill bg-warning" style="height: 82%"></span>
+        <span class="flex-fill bg-warning" style="height: 64%"></span>
+        <span class="flex-fill bg-warning" style="height: 46%"></span>
+        <span class="flex-fill bg-warning" style="height: 30%"></span>
+        <span class="flex-fill bg-warning" style="height: 16%"></span>
+      </div>
+    </div>
+  </div>
 
-            <ul class="navbar-nav me-auto">
-                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    
-                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-        
-                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    
-                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    
-                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    
-             </ul>
-
-        </div>
-        </div>
-    </nav>
+  <!-- Bootstrap JavaScript: this is what makes the hamburger open and close -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
