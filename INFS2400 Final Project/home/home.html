@@ -19,6 +19,15 @@
     </ul>   
 </nav> <!--Hamburger Button-->
 
+<script>
+  const btn = document.querySelector('.hamburger');
+  const links = document.querySelector('.nav-links');
+
+  btn.addEventListener('click', () => {
+    links.classList.toggle('open');
+  });
+</script>
+
     </head>
 
     <body>

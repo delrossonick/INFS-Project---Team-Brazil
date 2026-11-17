@@ -22,7 +22,7 @@ body {
   display: block;
   height: 3px;
   width: 100%;
-  background: white;
+  background: rgba(121, 114, 114, 0.123);
 }
 
 .hamburger { display: none; }          /* hidden on desktop */
