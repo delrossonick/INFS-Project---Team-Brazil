@@ -1,0 +1,202 @@
+/* GENERAL STYLING */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    background-color: #8ABFA1;
+    color: #252273;
+    line-height: 1.7;
+}
+
+
+/* ABOUT BANNER */
+
+.about-banner {
+    background: linear-gradient(
+        135deg,
+        #2B278C,
+        #252273
+    );
+
+    color: white;
+    text-align: center;
+    padding: 75px 20px;
+}
+
+.about-banner h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 700;
+}
+
+.about-banner p {
+    font-size: 20px;
+}
+
+/* INTRODUCTION */
+
+.intro-section {
+    padding-top: 65px;
+    padding-bottom: 55px;
+}
+
+.intro-section h2,
+.why-section h2,
+.team-section h2 {
+    color: #006E2F;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.intro-section p {
+    max-width: 850px;
+    margin: auto;
+    font-size: 18px;
+}
+
+/* MISSION AND GOALS */
+
+.mission-section {
+    background-color: #8ABFA1;
+    padding: 60px 0;
+}
+
+.about-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    border-left: 5px solid #F2B705;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.about-card h3 {
+    color: #2B278C;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.about-card p {
+    font-size: 17px;
+    margin-bottom: 0;
+}
+
+/* WHY IT MATTERS */
+
+.why-section {
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+.why-section p {
+    max-width: 850px;
+    margin: auto;
+    font-size: 18px;
+}
+
+/* TEAM ACCORDION */
+
+.team-section {
+    background-color: #8ABFA1;
+    padding: 65px 0;
+}
+
+.team-section .card {
+    border: none;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.team-section .card-header {
+    background-color: white;
+    padding: 18px 22px;
+}
+
+.team-section .card-link {
+    color: #2B278C;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    display: block;
+}
+
+.team-section .card-link:hover {
+    color: #006E2F;
+}
+
+.team-section .card-body {
+    background-color: white;
+    color: #252273;
+    font-size: 16px;
+    padding: 22px;
+}
+
+/* CONTACT SECTION */
+
+.contact-section {
+    background: linear-gradient(
+        135deg,
+        #2B278C,
+        #252273
+    );
+
+    color: white;
+    padding: 65px 20px;
+}
+
+.contact-section h2 {
+    font-size: clamp(1.7rem, 4vw, 2.5rem);
+    font-weight: 700;
+}
+
+.contact-section p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: #252273;
+    color: white;
+    padding: 25px 10px;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 576px) {
+
+    .about-banner {
+        padding: 50px 15px;
+    }
+
+    .about-banner p {
+        font-size: 16px;
+    }
+
+    .intro-section,
+    .why-section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .intro-section p,
+    .why-section p {
+        font-size: 16px;
+    }
+
+    .about-card {
+        padding: 22px;
+    }
+
+    .team-section .card-link {
+        font-size: 16px;
+    }
+
+    .contact-section {
+        padding: 45px 15px;
+    }
+}
