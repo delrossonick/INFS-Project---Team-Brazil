@@ -9,29 +9,35 @@
     <link href="resources.css" rel="stylesheet">
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../home/home.html">Brzail</a>
 
-   <nav class="navbar navbar-expand-lg navbar-dark bg-success">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="home/home.html">Brazil</a>
+      <!-- The hamburger button (a real <button>, opened and closed with a matching tag) -->
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#myNavMenu"
+              aria-controls="myNavMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-            <button class="navbar-toggler" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#myNavMenu"
-                    aria-controls="myNavMenu" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+      <!-- The collapsible part holds the links -->
+      <div class="collapse navbar-collapse" id="myNavMenu">
 
-            <div class="collapse navbar-collapse" id="myNavMenu">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a class="nav-link" href="home/home.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="solutions/solutions.html">Solutions</a></li>
-                    <li class="nav-item"><a class="nav-link" href="learnmore/learnmore.html">Learn More</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Edustats/edustats.html">EduStats</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="resources.html">Resources</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Aboutus/aboutus.html">About Us</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+        <!-- ONE list, with one <li> per link -->
+        <ul class="navbar-nav me-auto">
+         
+          <a class="nav-link" href="../home/home.html">Home</a>
+          <a class="nav-link" href="../Edustats/edustats.html">EduStats</a>
+          <a class="nav-link" href="../solutions/solutions.html">Solutions</a>
+          <a class="nav-link" href="../learnmore/learnmore.html">Learn More</a>
+          <a class="nav-link" href="../resources/resources.html">Resources</a>
+          <a class="nav-link" href="../Aboutus/aboutus.html">About Us</a>
+
+        </ul>
+
+      </div>
+    </div>
+  </nav>>
 
     
     <main class="resources-main">
