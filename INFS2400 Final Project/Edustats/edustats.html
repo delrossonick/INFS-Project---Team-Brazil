@@ -14,10 +14,24 @@
 </head>
 
 <body>
-  <header> 
-      <header>
-          <nav>
-              <ul>
+ <!--NavBar-->
+
+ <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="../home/home.html">Brzail</a>
+
+    <!-- The hamburger button (a real <button>, opened and closed with a matching tag) -->
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#myNavMenu"
+            aria-controls="myNavMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- The collapsible part holds the links -->
+    <div class="collapse navbar-collapse" id="myNavMenu">
+
+      <!-- ONE list, with one <li> per link -->
+      <ul class="navbar-nav me-auto">
                 <a class="nav-link" href="../home/home.html">Home</a>
                 <a class="nav-link" href="../Edustats/edustats.html">EduStats</a>
                 <a class="nav-link" href="../solutions/solutions.html">Solutions</a>
@@ -25,9 +39,10 @@
                 <a class="nav-link" href="../resources/resources.html">Resources</a>
                 <a class="nav-link" href="../Aboutus/aboutus.html">About Us</a>
               </ul>
-          </nav>
-      </header>
-  </header> 
+
+            </div>
+          </div>
+        </nav>
 
  
   <main class="resources-main">
