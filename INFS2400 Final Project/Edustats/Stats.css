@@ -1,10 +1,18 @@
 @charset "UTF-8";
 
-.bluebox {
+.body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    background-color: #8ABFA1;
+    color: #26352e;
+    line-height: 1.7;
+}
+
+.box {
 	background-color: #B2D6FF; 
 	text-align: center;
-    width: 200px;
-	height: 100px;
+    width: 100px;
+	height: 500px;
     border-radius: 10px;
     padding: 10px;
 	margin: 5px;
@@ -15,9 +23,9 @@
 }
 
 .container {
-	background-color: hsl(103, 100%, 85%);
-	width: 900px;
-	
+	background-color: #f3f8f4;
+	padding-left: 60px;
+	padding-right: 60px;
 }
 
 .floatleft {
@@ -28,39 +36,76 @@
     float: right;
 }
 
+header {
+    background-color: #244d3b;
+    padding: 12px 20px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+
 .page {
 	width: 900px;
 	margin: 0 auto;
 }
 
 .jumbotron {
-	background-color:pink;
+	background-color: #346f56;
 }
 
 
 .menu {
   height: 100px;
-  background-color: #B2D6FF; 
+  background-color: #f3f8f4; 
 }
 
-.sidebar {
- 	height: 300px;
-	background-color: #F09A9D; 
-	border-radius: 20px;
-	width: 200px;
-	float: left;
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav a {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 7px 15px;
+    border-radius: 999px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #F2B705;
+    color: #2B278C;
+}
+
+
+.resources-main {
+    max-width: 1050px;
+    margin: 30px auto;
 }
 
 .content {
 	height: 500px;
- 	background-color: #F5CF8E; 
-	border-radius: 20px;
-	width: 600px;
-	float: right;
+ 	background-color: #f3f8f4; 
+	width: 950px;
+	float: left;
 }
 
 .footer {
  	height: 100px;
-	background-color: #D6E9FE; 
+	background-color: #f3f8f4; 
 	clear: right; /* in this case 'both' also works */
+}
+
+#responsive {
+
+    max-width: 100%; 
+    height: auto;
 }
